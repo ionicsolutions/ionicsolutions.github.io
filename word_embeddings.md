@@ -1,6 +1,3 @@
----
-title: Word Embeddings
----
+## Word Embeddings
 
-# Headline
-
+Links and stuff.
