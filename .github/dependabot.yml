@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: weekly
+  reviewers:
+    - ionicsolutions
+  assignees:
+    - ionicsolutions
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+
+- package-ecosystem: npm
+  directory: /docs
+  schedule:
+    interval: weekly
+  reviewers:
+    - ionicsolutions
+  assignees:
+    - ionicsolutions
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+  ignore:
+  - dependency-name: '*'
+    update-types:
+      - version-update:semver-patch
