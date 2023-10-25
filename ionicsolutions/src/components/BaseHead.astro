@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import {Plausible} from 'astro-analytics'
 
 interface Props {
 	title: string;
@@ -48,3 +49,6 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 
 <!-- Google Search Console -->
 <meta name="google-site-verification" content="RC81nJHhYtz1oxJMdWBAexLoPw7dtgYBD4Rm0aR8wKE" />
+
+<!-- Plausible -->
+<Plausible domain="ionicsolutions.github.io" src="https://plausible.io/js/script.outbound-links.js" />
