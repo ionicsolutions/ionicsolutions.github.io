@@ -21,7 +21,7 @@ jobs:
         uses: withastro/action@v3
         with:
           path: ionicsolutions
-          node-version: 18
+          node-version: 22
 
   deploy:
     needs: build
